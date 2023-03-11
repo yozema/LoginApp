@@ -7,26 +7,22 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+final class LoginViewController: UIViewController {
 
     // MARK: - IBOutlets
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-    @IBOutlet var loginButton: UIButton!
-    
     private let userName = "User"
     private let password = "Password"
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.welcomeMessage = "Welcome, \(userName)!"
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
 
     
