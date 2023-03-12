@@ -33,7 +33,6 @@ final class LoginViewController: UIViewController {
         view.endEditing(true)
     }
 
-    
     // MARK: - IBActions
     @IBAction func loginButtonPressed() {
         guard userNameTF.text == user.login, passwordTF.text == user.password else {
@@ -56,7 +55,6 @@ final class LoginViewController: UIViewController {
         userNameTF.text = ""
         passwordTF.text = ""
     }
-    
     
     // MARK: - Private Methods
     private func showAlert(withTitle title: String, andMessage message: String, textField: UITextField? = nil) {
