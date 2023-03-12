@@ -5,31 +5,37 @@
 //  Created by Ilya Zemskov on 12.03.2023.
 //
 
-struct Person {
-    let name: String
-    let surname: String
-    let career: Career
+struct User {
+    let login: String
+    let password: String
+    let person: Person
     
-    var fullName: String {
-        name + " " + surname
-    }
-    
-    static func getPerson() -> Person {
-        Person(
-            name: "Ilya",
-            surname: "Zemskov",
-            career: Career.getCareer()
+    static func getPerson() -> User {
+        User(
+            login: "User",
+            password: "Password",
+            person: Person.getCareer()
         )
     }
 }
 
-struct Career {
+struct Person {
+    let name: String
+    let surname: String
+    let photo: String
     let company: String
     let division: String
     let position: Position
     
-    static func getCareer() -> Career {
-        Career(
+    var fullName: String {
+        "\(name) \(surname)"
+    }
+    
+    static func getCareer() -> Person {
+        Person(
+            name: "Ilya",
+            surname: "Zemskov",
+            photo: "MyPhoto",
             company: "L'Oreal",
             division: "Export CIS",
             position: .divisionalFinanceDirector
