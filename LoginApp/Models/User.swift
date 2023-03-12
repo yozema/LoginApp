@@ -25,6 +25,7 @@ struct Person {
     let photo: String
     let company: String
     let division: String
+    let department: String
     let position: Position
     
     var fullName: String {
@@ -38,13 +39,14 @@ struct Person {
             photo: "MyPhoto",
             company: "L'Oreal",
             division: "Export CIS",
+            department: "Finance",
             position: .divisionalFinanceDirector
         )
     }
 }
 
 enum Position: String {
-    case divisionalFinanceDirector = "Divisional Finance Director"
+    case divisionalFinanceDirector = "Director"
     
     var moreDetails: String {
         switch self {
