@@ -150,7 +150,7 @@
             </objects>
             <point key="canvasLocation" x="1633" y="-348"/>
         </scene>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="HRk-5Q-vtT">
             <objects>
                 <viewController id="ey3-wg-jy7" sceneMemberID="viewController">
@@ -267,7 +267,7 @@
                             <constraint firstItem="L9f-o4-V58" firstAttribute="height" secondItem="DP2-Xt-31C" secondAttribute="height" multiplier="0.176056" id="zAM-5e-rc4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="US5-hG-I32">
+                    <navigationItem key="navigationItem" title="Title" id="US5-hG-I32">
                         <barButtonItem key="rightBarButtonItem" title="More" id="aa8-D6-f64">
                             <connections>
                                 <segue destination="XNr-B4-AaW" kind="show" id="cl6-AF-yfX"/>
@@ -279,7 +279,7 @@
             </objects>
             <point key="canvasLocation" x="2393" y="385"/>
         </scene>
-        <!--asdsadas-->
+        <!--Title-->
         <scene sceneID="6s7-kg-B5e">
             <objects>
                 <viewController id="XNr-B4-AaW" sceneMemberID="viewController">
@@ -302,7 +302,7 @@
                             <constraint firstItem="kpT-1C-3WG" firstAttribute="top" secondItem="JHK-lw-pfL" secondAttribute="top" constant="20" id="tg9-hv-avm"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="asdsadas" id="hG6-6O-AcK"/>
+                    <navigationItem key="navigationItem" title="Title" id="hG6-6O-AcK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RCq-wF-2Sg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
